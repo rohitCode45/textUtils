@@ -42,10 +42,10 @@ export default function TextForm(props) {
 
             <div className="container my-4">
                 <h2>Counter</h2>
-                <p> {text.split(" ").length} words And {text.length} characters And {text.split(".").length - 1} Lines</p>
+                <p> {text===''?0:text.split(" ").length} words And {text.length} characters And {text.split(".").length - 1} Lines</p>
                 <h2>Read Time</h2>
-                <p>You can read it in {0.008 * text.split(" ").length} minuts at slow speed</p>
-                <p>You can read it in {0.0033 * text.split(" ").length} minuts at high speed</p>
+                <p>You can read it in {0.008 * text===''?0:text.split(" ").length} minuts at slow speed</p>
+                <p>You can read it in {text===''?0:text.split(" ").length} minuts at high speed</p>
                 <h2 >Preview</h2>
                 <p>{text}</p>
 

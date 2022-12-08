@@ -8,7 +8,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -26,7 +25,7 @@ function App() {
             <About />
           </Route>
           <Route exact path="/">
-          <TextForm heading="Type your text here 1 "/>
+          <TextForm heading="Type your text here "/>
           </Route>
         </Switch>
     </div>

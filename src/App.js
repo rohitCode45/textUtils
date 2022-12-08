@@ -26,7 +26,7 @@ function App() {
             <About />
           </Route>
           <Route exact path="/">
-          <TextForm heading="Type your text here "/>
+          <TextForm heading="Type your text here 1 "/>
           </Route>
         </Switch>
     </div>
